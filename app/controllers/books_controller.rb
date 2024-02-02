@@ -1,5 +1,5 @@
 class BooksController < ApplicationController
   def index
-    @books = ["The Way of the Shaman", "Falling with Folded Wings", "Summoner Rising"]
+    @books = Book.all
   end
 end

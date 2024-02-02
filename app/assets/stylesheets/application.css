@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+.bookshelf {
+    display: flex;
+    justify-content: center;
+}
+
+.book-ctr {
+    margin: 5rem 7rem;
+}

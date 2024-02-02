@@ -1,5 +1,10 @@
-<ul>
+
+<div class="bookshelf">
     <% @books.each do |book| %>
-        <li><%= book %></li>
+        <div class="book-ctr">
+        <h4><%= book.title %></h4>
+        <p><%= book.author %></p>
+        <img src=<%= book.cover_img%> />
+        </div>
     <% end %>
-</ul>
+</div>
