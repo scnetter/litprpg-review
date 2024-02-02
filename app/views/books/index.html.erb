@@ -3,8 +3,8 @@
     <% @books.each do |book| %>
         <div class="book-ctr">
         <h4><%= book.title %></h4>
-        <p><%= book.author %></p>
         <img src=<%= book.cover_img%> />
+        <p><%= book.author %></p>
         </div>
     <% end %>
 </div>
