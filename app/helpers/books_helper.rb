@@ -1,6 +1,6 @@
 module BooksHelper
 
   def year_of(book)
-    book.publish_date.strftime("%Y")
+    book.publish_date.year
   end
 end
