@@ -9,6 +9,14 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
+    <nav>
+      <%= image_tag("logo.png") %>
+      <ul>
+        <li>
+          <%= link_to 'All Events', books_path %>
+        </li>
+      </ul>
+    </nav>
   <header>
     <h1>RPG Review</h1>
   </header>

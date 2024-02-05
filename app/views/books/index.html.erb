@@ -3,7 +3,7 @@
     <% @books.each do |book| %>
         <section>
             <div class="book">
-                <h4><%= book.title %></h4>
+                <h4><%= link_to book.title, book %></h4>
                 <img src=<%= book.cover_img%> />
                 <p><%= year_of(book) %>
                 <p><%= truncate(book.synopsis, length: 50, separator: ' ') %>
