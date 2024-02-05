@@ -4,7 +4,7 @@
         <div class="book-ctr">
         <h4><%= book.title %></h4>
         <img src=<%= book.cover_img%> />
-        <p><%= book.publish_date %>
+        <p><%= year_of(book) %>
         <p><%= truncate(book.synopsis, length: 50, separator: ' ') %>
         </div>
     <% end %>
