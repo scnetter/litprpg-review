@@ -1,11 +1,13 @@
 <h2>LitRPG Books</h2>
 <div class="bookshelf">
     <% @books.each do |book| %>
-        <div class="book-ctr">
-        <h4><%= book.title %></h4>
-        <img src=<%= book.cover_img%> />
-        <p><%= year_of(book) %>
-        <p><%= truncate(book.synopsis, length: 50, separator: ' ') %>
-        </div>
+        <section>
+            <div class="book">
+                <h4><%= book.title %></h4>
+                <img src=<%= book.cover_img%> />
+                <p><%= year_of(book) %>
+                <p><%= truncate(book.synopsis, length: 50, separator: ' ') %>
+            </div>
+        </section>
     <% end %>
 </div>

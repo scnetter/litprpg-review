@@ -13,19 +13,3 @@
  *= require_tree .
  *= require_self
  */
- h1, h2, h4, p {
-    text-align: center;
- }
-
- img {
-    margin-left: 7rem;
- }
-
-.bookshelf {
-    display: flex;
-    justify-content: center;
-}
-
-.book-ctr {
-    margin: 5rem 7rem;
-}
