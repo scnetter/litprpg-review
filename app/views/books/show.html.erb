@@ -6,3 +6,7 @@
         <p><%= @book.synopsis %></p>
     </div>
 </section>
+
+<section class="admin">
+    <%= link_to "Edit", edit_book_path(@book), class: "button" %>
+</section>
