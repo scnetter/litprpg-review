@@ -1,8 +1,13 @@
 class BooksController < ApplicationController
-  before_action :find_book, except: [:index, :new, :create]
+  before_action :find_book, except: [:index, :new, :create, :all_books]
 
   def index
+    @books = Book.available
+  end
+
+  def all_books
     @books = Book.all
+    render "index"
   end
 
   def show
