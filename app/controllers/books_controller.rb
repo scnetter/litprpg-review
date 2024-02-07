@@ -16,6 +16,18 @@ class BooksController < ApplicationController
     redirect_to @book
   end
 
+  def new
+    @book = Book.new
+  end
+
+  def create
+    if @book = Book.create(book_params)
+      redirect_to @book
+    else
+      render :new
+    end
+  end
+
   private
   def find_book
     @book = Book.find(params[:id])
