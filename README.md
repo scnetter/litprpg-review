@@ -28,3 +28,4 @@ Things you may want to cover:
 * Add method/logic to calculate average rating
 * Authentication
 * Admin functions
+* Add validator to ensure cover_img is a local file or http link.

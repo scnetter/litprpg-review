@@ -9,4 +9,5 @@
 
 <section class="admin">
     <%= link_to "Edit", edit_book_path(@book), class: "button" %>
+    <%= link_to "Delete", @event, class: "button", data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
 </section>
