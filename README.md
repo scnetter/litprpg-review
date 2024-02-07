@@ -22,3 +22,9 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+## TODO
+* Add rating column
+* Add method/logic to calculate average rating
+* Authentication
+* Admin functions
