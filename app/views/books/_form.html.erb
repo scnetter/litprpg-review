@@ -5,9 +5,11 @@
     <%= f.text_field :author %>
     <%= f.label :cover_img %>
     <%= f.text_field :cover_img %>
+    <%= f.label :rating %>
+    <%= f.number_field :rating, in: 1..5 %>
     <%= f.label :synopsis %>
     <%= f.text_area :synopsis, rows: 5 %>
     <%= f.label :publish_date %>
     <%= f.date_field :publish_date, {class: "date"} %>
-    <%= f.submit "Add Book" %>
+    <%= f.submit %>
 <% end %>
