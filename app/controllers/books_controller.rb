@@ -26,10 +26,11 @@ class BooksController < ApplicationController
   end
 
   def create
-    if @book = Book.create(book_params)
+    @book = Book.new(book_params)
+    if @book.save
       redirect_to @book
     else
-      render :new
+      render :new, status: :unprocessable_entity # 422 Status code
     end
   end
 
