@@ -6,7 +6,7 @@
     <%= f.label :cover_img %>
     <%= f.text_field :cover_img %>
     <%= f.label :rating %>
-    <%= f.number_field :rating, in: 1..5 %>
+    <%= f.select :rating, Book::RATINGS, prompt: "Select Rating" %>
     <%= f.label :synopsis %>
     <%= f.text_area :synopsis, rows: 5 %>
     <%= f.label :publish_date %>
