@@ -5,7 +5,7 @@ class Book < ApplicationRecord
   validates :synopsis, length: { minimum: 25 }
   validates :rating, inclusion: { in: RATINGS }
   validates :cover_img, format: {
-    with: /http:\/\/.+\.(jpg|png|gif)/,
+    with: /https:\/\/.+\.(jpg|png|gif)/,
     message: "must be a valid URL"
   }
 
