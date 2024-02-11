@@ -17,8 +17,11 @@ class BooksController < ApplicationController
   end
 
   def update
-    @book.update(book_params)
-    redirect_to @book
+    if @book.update(book_params)
+      redirect_to @book
+    else
+      render :edit, status: :unprocessable_entity # 422 Status code
+    end
   end
 
   def new
