@@ -18,7 +18,7 @@ class BooksController < ApplicationController
 
   def update
     if @book.update(book_params)
-      redirect_to @book
+      redirect_to @book, notice: "Book successfully updated!"
     else
       render :edit, status: :unprocessable_entity # 422 Status code
     end
@@ -31,7 +31,7 @@ class BooksController < ApplicationController
   def create
     @book = Book.new(book_params)
     if @book.save
-      redirect_to @book
+      redirect_to @book, notice: "Book successfully created!"
     else
       render :new, status: :unprocessable_entity # 422 Status code
     end
@@ -39,7 +39,7 @@ class BooksController < ApplicationController
 
   def destroy
     @book.destroy
-    redirect_to books_url, status: :see_other
+    redirect_to books_url, status: :see_other, alert: "Book deleted!"
   end
 
 
