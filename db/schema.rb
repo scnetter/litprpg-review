@@ -26,7 +26,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_21_011521) do
     t.string "reviewer_name"
     t.string "reviewer_email"
     t.text "review_text"
-    t.string "reviewer_rating"
+    t.integer "reviewer_rating"
     t.integer "book_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
